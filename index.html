@@ -69,6 +69,58 @@
 	<body class="claro">
 		<style>
 			/* CUSTOM CSS RULES */
+			#headerDesktop {
+				background-color: #00AFEE !important;
+				height: 95px !important;
+			}
+			#header .title {
+			  font-family: 'open_sansregular',sans-serif !important;
+			}
+			#headerDesktop .subtitle {
+				color: white !important;
+			}
+			#nav-bar {
+				background-color: #00AFEE !important;
+			}
+			.nav-bar .entry.active > .entryLbl, .nav-bar .dropdown.active .dropdown-toggle {
+				background-color: rgb(40, 50, 57) !important;
+			}
+			#headerDesktop .logoWrapper {
+				background-color: #00AFEE;
+			}
+			.nav-bar .dropdown:not(.active):hover .dropdown-toggle, .nav-bar li:not(.active) .entryLbl:hover {
+				background-color: #82DDFF !important;
+			}
+			.nav-bar .tooltip-inner {
+				color: #82DDFF !important;
+				background-color: rgb(40, 50, 57) !important;
+			}
+			.nav-bar .nav-tabs > .tooltip .tooltip-arrow, .nav-bar .builder-content-panel .tooltip-arrow {
+				color: rgb(40, 50, 57) !important;
+				border-top-color: rgb(40, 50, 57) !important;
+			}
+			.nav-bar .entry.active > .entryLbl {
+				transition: all 0.3s ease-in-out;
+			}
+			.shareIcon[class^="icon-"]:before, .shareIcon[class*=" icon-"]:before {
+				color: white;
+			}
+			p .image-wrapper, div .image-wrapper {
+				/*position: absolute !important;
+    		left: 5px !important;*/
+				display: inline-block !important;
+    		float: left !important;
+				padding: 10px !important;
+			}
+
+			.image-container.has-width.float-right {
+				text-align: inherit !important;
+				padding: 10px !important;
+			}
+			.btn-fullscreen {
+				display: none !important;
+			}
+
 		</style>
 
 		<!-- Builder top panel is injected here -->
@@ -262,9 +314,13 @@
 				/*
 				 * Custom Javascript to be executed while the application is initializing goes here
 				 */
+				//  var imgElements = document.querySelector('.logoImg').src = '';
+				//  debugger
 
 				// The application is ready
 				topic.subscribe("tpl-ready", function(){
+					var imgElements = document.querySelector('img.logoImg').src = 'resources/common/icons/loader.svg';
+
 					/*
 					 * Custom Javascript to be executed when the application is ready goes here
 					 */
