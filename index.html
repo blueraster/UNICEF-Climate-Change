@@ -73,6 +73,9 @@
 				background-color: #00AFEE !important;
 				height: 95px !important;
 			}
+			#headerMobile {
+				background-color: #00AFEE !important;
+			}
 			#header .title {
 			  font-family: 'open_sansregular',sans-serif !important;
 			}
@@ -106,12 +109,14 @@
 				color: white;
 			}
 			p .image-wrapper, div .image-wrapper {
-				/*position: absolute !important;
-    		left: 5px !important;*/
 				display: inline-block !important;
     		float: left !important;
 				padding: 10px !important;
 			}
+			.esriLegendLayerLabel {
+				display: none !important;
+			}
+
 
 			.image-container.has-width.float-right {
 				text-align: inherit !important;
@@ -120,6 +125,26 @@
 			.btn-fullscreen {
 				display: none !important;
 			}
+			/*.legendContainer.isInlined {
+				margin-top: -45px !important;
+			}*/
+			.descLegendPanel.hasDescription .legendWrapper {
+				margin-top: 0 !important;
+			}
+			.descLegendPanel .descLegendPanelInner {
+				min-height: 600px !important;
+			}
+
+
+			@media (max-width: 800px) {
+			  .textEditorContent img:nth-child(1) {
+			    display: none !important;
+			  }
+				.textEditorContent > p:nth-child(1) {
+					text-align: right !important;
+				}
+			}
+
 
 		</style>
 
@@ -315,12 +340,11 @@
 				 * Custom Javascript to be executed while the application is initializing goes here
 				 */
 				//  var imgElements = document.querySelector('.logoImg').src = '';
-				//  debugger
+
 
 				// The application is ready
 				topic.subscribe("tpl-ready", function(){
-					var imgElements = document.querySelector('img.logoImg').src = 'resources/common/icons/loader.svg';
-
+					// var imgElements = document.querySelector('img.logoImg').src = 'resources/common/icons/loader.svg';
 					/*
 					 * Custom Javascript to be executed when the application is ready goes here
 					 */
