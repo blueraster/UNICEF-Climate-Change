@@ -69,6 +69,10 @@
 	<body class="claro">
 		<style>
 			/* CUSTOM CSS RULES */
+			.esriSimpleSlider {
+				right: 20px !important;
+				left: initial !important;
+			}
 			#headerDesktop {
 				background-color: #00AFEE !important;
 				height: 95px !important;
@@ -139,6 +143,32 @@
 			.descLegendPanel .descLegendPanelInner {
 				min-height: 600px !important;
 			}
+			#leftColumnMinimizer {
+				height: 25px;
+				width: 20px;
+				position: absolute;
+				/*top: 48%;*/
+				bottom: calc(50%);
+				left: 30%;
+				cursor: pointer;
+				z-index: 100;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				-moz-border-radius-topright: 5px;
+				-moz-border-radius-bottomright: 5px;
+				-webkit-border-top-right-radius: 5px;
+				-webkit-border-bottom-right-radius: 5px;
+				background: #00AFEE !important
+
+			}
+
+			#leftColumnMinimizer span {
+				text-align: center;
+				font-weight: 700;
+				font-size: 18px;
+				color: #fff;
+				padding-left: 3px;
+			}
 
 
 			@media (max-width: 800px) {
@@ -148,6 +178,9 @@
 				.textEditorContent > p:nth-child(1) {
 					text-align: right !important;
 				}
+				#leftColumnMinimizer {
+		   		display: none !important;
+		    }
 			}
 
 
@@ -155,7 +188,7 @@
 
 		<!-- Builder top panel is injected here -->
 		<div id="builderPanel" class="hide mainViewAboveMap"></div>
-
+		<div id="leftColumnMinimizer"><span id="minimizerIcon">&lt;</span></div>
 		<!-- Header -->
 		<div id="header" class="mainViewAboveMap">
 			<!-- Mobile header -->
@@ -344,12 +377,36 @@
 				/*
 				 * Custom Javascript to be executed while the application is initializing goes here
 				 */
-				//  var imgElements = document.querySelector('.logoImg').src = '';
-
 
 				// The application is ready
 				topic.subscribe("tpl-ready", function(){
-					// var imgElements = document.querySelector('img.logoImg').src = 'resources/common/icons/loader.svg';
+					$('#leftColumnMinimizer').click(function() {
+
+							var icon = $("#minimizerIcon");
+
+							if (icon[0].innerHTML === "&lt;") {
+								$('#descLegendPanel').css('display','none');
+								$('#leftColumnMinimizer').css('left','0%');
+								icon[0].innerHTML = "&gt;";
+							} else {
+								$('#descLegendPanel').css('display','block');
+								$('#leftColumnMinimizer').css('left','30%');
+								icon[0].innerHTML = "&lt;";
+							}
+
+					 });
+
+					 //todo: on #14: hide basemap picker
+					 //dont center any text --title
+					 //always have legend in view
+					 //more opacity on left panel, and add some kind of blur effect
+					 //lato font
+					 //host on cloudfront
+					 //host on GitHub, etc.
+
+					//  topic.subscribe("story-navigate-section", function(index) {
+					// 	 debugger
+					//  });
 					/*
 					 * Custom Javascript to be executed when the application is ready goes here
 					 */
