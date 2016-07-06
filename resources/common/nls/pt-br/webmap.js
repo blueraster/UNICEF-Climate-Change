@@ -2,13 +2,15 @@
 	 ({
 		commonWebmap: {
 			selector: {
-				lblWebMap: "Mapa da Web",
+				lblWebMap: "Mapa",
 				lblLocation: "Local",
 				lblContent: "Conteúdo",
 				lblPopup: "Pop-up",
 				lblControls: "Extras",
 				lblOverview: "Mapa de Visão Geral",
 				lblLegend: "Legenda",
+				lblGeocoder: "Localizador de Endereços ou Lugares",
+				tooltipGeocoder: "Permite aos seus usuários localizar endereços e lugares em seus mapas.",
 				loadingTitle: "Carregando título",
 				entry: "Entrada",
 				entries: "Entradas",
@@ -17,12 +19,14 @@
 				and: "e",
 				action: "Ação na seção",
 				actions: "Ação nas seções",
-				originalWebmap: "Mapa da web utilizado para publicar o %TPL_NAME%",
-				browseMaps: "Procurar por Mapas",
-				current: "Mapa da web atual",
-				select: "Selecione um mapa da web",
-				newMap: "Mapa da web recentemente selecionado",
-				webmapDefault: "Mapa da web padrão",
+				originalWebmap: "Mapa utilizado para publicar o %TPL_NAME%",
+				browseMaps: "Selecionar um mapa",
+				createMap: "Criar um mapa",
+				current: "Mapa atual",
+				select: "Selecione ou crie um mapa",
+				newMap: "Mapa recentemente selecionado",
+				newCreatedMap: "Mapa criado recentemente",
+				webmapDefault: "Mapa padrão",
 				customCfg: "Configuração personalizada",
 				tooltipLocation: "Define o local que este mapa aparecerá.",
 				tooltipContent: "Define a visibilidade das camadas.",
@@ -43,10 +47,33 @@
 				extentTitle: "Localização do mapa",
 				extentExplain: "Move e amplia o mapa para definir seu visual para os leitores.",
 				extentSave: "Salvar Localização do Mapa",
-				popupTitle: "Pop-Up do Mapa",
-				popupExplain: "Clique em uma feição para abrir o pop-up que deseja exibir.",
-				popupSave: "Salve a configuração do pop-up",
+				popupTitle: "Pop-up do mapa",
+				popupExplain: "Clique em uma feição para abrir o pop-up que você deseja exibir.",
+				popupSave: "Salvar a configuração do pop-up",
 				hintNavigation: "A navegação do mapa está desabilitada."
+			},
+			editor: {
+				loading: "Aguarde enquanto o editor de mapa estiver carregando",
+				newTitle: "Criar novo mapa",
+				editTitle: "Editar mapa",
+				titleLbl: "Título",
+				titlePh: "Título do mapa...",
+				folderLbl: "O mapa será criado na mesma pasta que a história.",
+				creating: "Criando o mapa",
+				saving: "Salvando o mapa",
+				success: "Mapa salvo",
+				successCreate: "Mapa criado",
+				cancelTitle: "Descartar quaisquer alterações não salvas?",
+				errorDuplicate: "Você já tem um mapa com este título",
+				errorCreate: "Não foi possível criar o mapa. Tente novamente.",
+				errorSave: "Não foi possível salvar o mapa. Tente novamente.",
+				notavailable1: "Desculpe, a criação ou edição de um mapa não é suportada no Firefox devido a uma limitação técnica. Você pode desejar construir sua história utilizando um navegador da web diferente ou utilizar a seguinte solução provisória.",
+				notavailable2: "Desculpe, a criação ou edição de um mapa não é suportada já que o aplicativo de mapa da história não está hospedado no %PRODUCT%. Entre em contato com seu administrador do ArcGIS para mais informações.",
+				notavailable3: "Desculpe, a criação ou edição de um mapa não é suportada nesta versão do Portal for ArcGIS (exige 10.4 ou posterior). Entre em contato com seu administrador do ArcGIS para mais informações.",
+				notavailable4: "Você pode criar um mapa utilizando %MV%, então voltar aqui para adicioná-lo na sua história.",
+				notavailable5: "Você pode editar o mapa utilizando %MV%, então voltar aqui e %apply% para visualizar suas alterações.",
+				notavailable6: "visualizador de mapa",
+				notavailable7: "recarregar o mapa"
 			}
 		},
 		configure: {
@@ -57,11 +84,11 @@
 					contentLabel: "Meu Conteúdo",
 					favoritesLabel: "Meus Favoritos"
 				},
-				title: "Selecionar Mapa da Web",
+				title: "Selecionar um mapa",
 				searchTitle: "Pesquisar",
 				ok: "Ok",
 				cancel: "Cancelar",
-				placeholder: "Inserir termo de pesquisa ou ID de Mapa da Web..."
+				placeholder: "Insira o termo de pesquisa ou ID do mapa da web..."
 			}
 		}
 	})

@@ -2,13 +2,15 @@
 	 ({
 		commonWebmap: {
 			selector: {
-				lblWebMap: "Mapa web",
+				lblWebMap: "Mapa",
 				lblLocation: "Ubicación",
 				lblContent: "Contenido",
-				lblPopup: "Menú emergente",
+				lblPopup: "Elemento emergente",
 				lblControls: "Extras",
 				lblOverview: "Mapa de vista general",
 				lblLegend: "Leyenda",
+				lblGeocoder: "Buscador de direcciones o lugares",
+				tooltipGeocoder: "Permite a tus usuarios buscar direcciones y lugares en tus mapas.",
 				loadingTitle: "Cargando título",
 				entry: "Entrada",
 				entries: "Entradas",
@@ -17,12 +19,14 @@
 				and: "y",
 				action: "Acción en sección",
 				actions: "Acción en secciones",
-				originalWebmap: "Mapa web utilizado para publicar %TPL_NAME%",
-				browseMaps: "Buscar mapas",
-				current: "Mapa web actual",
-				select: "Seleccionar un mapa web",
-				newMap: "Mapa web que se acaba de seleccionar",
-				webmapDefault: "Valor por defecto de mapa web",
+				originalWebmap: "Mapa utilizado para publicar %TPL_NAME%",
+				browseMaps: "Selecciona un mapa",
+				createMap: "Crea un mapa",
+				current: "Mapa actual",
+				select: "Selecciona o crea un mapa",
+				newMap: "Mapa recién seleccionado",
+				newCreatedMap: "Mapa recién creado",
+				webmapDefault: "Mapa predeterminado",
 				customCfg: "Configuración personalizada",
 				tooltipLocation: "Define la ubicación que mostrará este mapa.",
 				tooltipContent: "Define las capas visibles.",
@@ -43,10 +47,33 @@
 				extentTitle: "Ubicación del mapa",
 				extentExplain: "Desplázate y haz zoom por el mapa para definir cómo lo verán los lectores.",
 				extentSave: "Guardar ubicación del mapa",
-				popupTitle: "Ventana emergente del mapa",
+				popupTitle: "Ventana emergente en el mapa",
 				popupExplain: "Haz clic en una entidad para abrir la ventana emergente que deseas mostrar.",
 				popupSave: "Guardar la configuración de la ventana emergente",
 				hintNavigation: "La navegación del mapa se ha deshabilitado."
+			},
+			editor: {
+				loading: "Espera mientras se carga el editor de mapa...",
+				newTitle: "Crear mapa nuevo",
+				editTitle: "Editar mapa",
+				titleLbl: "Título",
+				titlePh: "Título de mapa...",
+				folderLbl: "El mapa se creará en la misma carpeta que la historia.",
+				creating: "Creando el mapa",
+				saving: "Guardando el mapa",
+				success: "Mapa guardado",
+				successCreate: "Mapa creado",
+				cancelTitle: "¿Quieres descartar los cambios no guardados?",
+				errorDuplicate: "Ya tienes un mapa con ese título",
+				errorCreate: "No se puede crear el mapa. Vuelve a intentarlo.",
+				errorSave: "No se puede guardar el mapa. Vuelve a intentarlo.",
+				notavailable1: "Lo sentimos, debido a una limitación técnica, la creación o edición de mapas no es compatible en Firefox. Si lo prefieres, puedes crear tu historia en un navegador web distinto o usar la siguiente solución alternativa.",
+				notavailable2: "Lo sentimos, la creación o edición de mapas no es compatible porque la aplicación de story map no está alojada en %PRODUCT%. Contacta con tu administrador de ArcGIS para obtener más información.",
+				notavailable3: "Lo sentimos, la creación o edición de mapas no es compatible con esta versión de Portal for ArcGIS (requiere 10.4 o posterior). Contacta con tu administrador de ArcGIS para obtener más información.",
+				notavailable4: "Puedes crear un mapa usando %MV% y después volver aquí para agregarlo a tu historia.",
+				notavailable5: "Puedes editar el mapa usando %MV% y después volver aquí y %apply% para ver tus cambios.",
+				notavailable6: "visor de mapas",
+				notavailable7: "vuelve a cargar el mapa"
 			}
 		},
 		configure: {
@@ -57,11 +84,11 @@
 					contentLabel: "Mi contenido",
 					favoritesLabel: "Mis favoritos"
 				},
-				title: "Seleccionar mapa web",
+				title: "Selecciona un mapa",
 				searchTitle: "Buscar",
 				ok: "Aceptar",
 				cancel: "Cancelar",
-				placeholder: "Introducir término de búsqueda o Id. del mapa web..."
+				placeholder: "Introduce un término de búsqueda o Id. del mapa web..."
 			}
 		}
 	})

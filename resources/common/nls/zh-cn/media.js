@@ -30,7 +30,7 @@
 			imageSelectorFacebook: {
 				leftHeader: "Facebook 用户",
 				rightHeader: "Facebook 页面",
-				pageExplain: "Facebook 页面属于公共品牌/产品或像 <b>esrigis</b> 一样的名品。可以在页面 URL 的第一个 '/' 后面获取页面名称。",
+				pageExplain: "Facebook 页面属于公共品牌/产品或像 <b>esrigis</b> 一样的名品。可以在页面 URL 的第一个\“/\”后面获得页面名称。",
 				pageInputLbl: "页面名称",
 				lookupMsgError: "未找到页面"
 			},
@@ -38,7 +38,7 @@
 				userInputLbl: "电子邮件或 Picasa/Google+ ID",
 				signInMsg2: "未找到帐户",
 				howToFind: "如何查找 Picasa 或 Google+ 帐户 ID",
-				howToFind2: "复制任何 Picasa 或 G+ 页面的第一个和第二个 '/' 之间的数字"
+				howToFind2: "复制任何 Picasa 或 G+ 页面的第一个和第二个\“/\”之间的数字"
 			},
 			videoSelectorCommon: {
 				check: "选中",
@@ -64,7 +64,7 @@
 				url: "Vimeo 视频的 URL"
 			},
 			videoSelectorOther: {
-				explain1: "此应用程序无法播放原始视频(例如 avi、mpeg)，但可以播放带有内置播放器的托管视频文件(例如 YouTube 或 Vimeo)。",
+				explain1: "此故事无法播放原始视频(例如 avi、mpeg)，但可以播放带有内置播放器的托管视频文件(例如 YouTube 或 Vimeo)。",
 				explain2: "大多数在线视频托管服务均提供此功能，您必须查找此选项以嵌入视频，复制给定代码并使用 %WEBPAGE%。",
 				explain3: "或者，如果您希望自己托管视频，则可以创建使用视频播放器(如 %EXAMPLE%)的 HTML 页面，托管此页面并同样使用 %WEBPAGE%。",
 				webpage: "网页要素"

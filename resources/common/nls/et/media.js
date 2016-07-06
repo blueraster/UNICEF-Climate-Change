@@ -8,7 +8,7 @@
 				lblImage: "Pilt",
 				lblVideo: "Video",
 				lblExternal: "Veebileht",
-				disabled: "Administraator on selle võimaluse keelanud",
+				disabled: "See funktsioon on administraatori poolt välja lülitatud",
 				url: "Pildi veebiaadressi käsitsi sisestamiseks",
 				userLookup: "Laadi albumid",
 				notImplemented: "Pole veel kasutusele võetud.",
@@ -30,7 +30,7 @@
 			imageSelectorFacebook: {
 				leftHeader: "Facebooki kasutajanimi",
 				rightHeader: "Facebooki leht",
-				pageExplain: "Facebooki leht on avalik kaubamärk/toode nagu <b>esrigis</b>. Lehe nime leiate lehe URL-ist pärast '/'.",
+				pageExplain: "Facebooki leht on avalik kaubamärk/toode nagu <b>esrigis</b>. Saad lehe nime pärast esimest \'/\' lehekülje URL-il.",
 				pageInputLbl: "Lehe nimi",
 				lookupMsgError: "Lehte ei leitud"
 			},
@@ -38,7 +38,7 @@
 				userInputLbl: "e-post või Picasa/Google+ ID",
 				signInMsg2: "Kontot ei leitud",
 				howToFind: "Kuidas leida Picasa või Google+ konto ID-d",
-				howToFind2: "Kopeerige mis tahes Picasa või G+ lehe esimese ja teise kaldkriipsu vahel asuvad numbrikohad"
+				howToFind2: "Kopeeri numbrikohad esimese ja teise \'/\' vahelt Picasa või G+ lehelt"
 			},
 			videoSelectorCommon: {
 				check: "Kontrolli",
@@ -64,7 +64,7 @@
 				url: "Vimeo video URL"
 			},
 			videoSelectorOther: {
-				explain1: "Rakendus ei saa esitada töötlemata videoid (nt .avi, .mpeg), kuid saab esitada majutatud videoid sisseehitatud pleierites (nt YouTube või Vimeo).",
+				explain1: "See lugu ei saa esitada töötlemata videoid (nt AVI-, MPEG-vormingus), kuid saab esitada majutatud videofaile sisseehitatud pleierites (nt YouTube või Vimeo).",
 				explain2: "Enamik veebis olevaid videomajutusteenuseid pakub seda funktsiooni. Peate leidma video lisamise võimaluse, kopeerima antud koodi ja kasutama veebilehte %WEBPAGE%.",
 				explain3: "Kui soovite aga videot ise majutada, saate luua HTML-lehe, mis kasutab näiteks videopleierit %EXAMPLE%, selle lehe majutada ning kasutada ka veebilehte %WEBPAGE%.",
 				webpage: "Veebilehe funktsioon"
@@ -102,7 +102,7 @@
 				lblPosition3Explain2: "(laius on alati paneelile vastav)",
 				lblPosition4Explain: "(võib moonutada)",
 				unloadLbl: "Laadi maha, kui lugeja liigub mujale",
-				unloadHelp: "Kui veebileht sisaldab audio- või videosisu, märkige see valik, et takistada selle sisu esitamist siis, kui lugeja liigub mujale. Tühjendage see valik näiteks siis, kui soovite, et heliriba esitataks siis, kui lugeja läbi loo liigub.<br />Kui veebileht on rakendus, tühjendage see valik, et rakendust ei laaditaks uuesti siis, kui lugeja selle juurde naaseb."
+				unloadHelp: "Kui veebileht sisaldab audio- või videosisu, jätke see valik märgituks, et lõpetada selle sisu esitamine, kui lugeja liigub mujale. Tühjendage see valik näiteks siis, kui soovite, et heliriba esitataks samal ajal, kui lugeja läbi loo liigub.<br />Kui veebileht on rakendus, tühjendage see valik, et kasutaja naasmisel ei laaditaks lugu uuesti."
 			},
 			editorActionGeocode: {
 				lblTitle: "Märgi aadress või asukoht",

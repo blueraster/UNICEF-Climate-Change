@@ -38,7 +38,7 @@
 				userInputLbl: "E-mail o ID Picasa/Google+",
 				signInMsg2: "Account non trovato",
 				howToFind: "Come trovare l\'ID di un account Picasa o Google+",
-				howToFind2: "Copiare le cifre tra il primo e il secondo \'/\' di una qualsiasi pagina Picasa o G+"
+				howToFind2: "Copiare le cifre tra il primo e il secondo \'/\' di qualsiasi pagina Picasa o G+"
 			},
 			videoSelectorCommon: {
 				check: "Seleziona",
@@ -64,7 +64,7 @@
 				url: "URL di un video Vimeo"
 			},
 			videoSelectorOther: {
-				explain1: "L\'applicazione non è in grado di riprodurre video non elaborati (ad esempio, avi o mpeg), ma può riprodurre video in hosting con lettori incorporati (ad esempio, YouTube o Vimeo).",
+				explain1: "La storia non è in grado di riprodurre video non elaborati (ad esempio, avi o mpeg), ma può riprodurre video in hosting con lettori incorporati (ad esempio, YouTube o Vimeo).",
 				explain2: "La maggior parte dei servizi di hosting di video online offre tale feature. È necessario individuare l\'opzione per incorporare il video, copiare il codice specificato e utilizzare %WEBPAGE%.",
 				explain3: "In alternativa, se si desidera eseguire autonomamente l\'hosting del video, è possibile creare una pagina HTML che utilizza un lettore video come %EXAMPLE%, eseguire l\'hosting di tale pagina e utilizzare %WEBPAGE%.",
 				webpage: "Feature pagina Web"
@@ -102,7 +102,7 @@
 				lblPosition3Explain2: "(la larghezza viene sempre adattata al pannello)",
 				lblPosition4Explain: "(possibile distorsione)",
 				unloadLbl: "Scarica quando il lettore passa a un altro elemento",
-				unloadHelp: "Se la pagina Web dispone di supporti audio o video, mantenere l\'opzione selezionata per arrestare la riproduzione del contenuto quando il lettore passa a un elemento diverso. Deselezionarla, per esempio, per mantenere la riproduzione di una colonna sonora mentre il lettore continua a leggere la storia.<br />Se la pagina Web è un\'applicazione, deselezionare l\'opzione in modo che l\'applicazione non venga ricaricata se il lettore torna alla pagina."
+				unloadHelp: "Se la pagina Web dispone di supporti audio o video, mantenere l\'opzione selezionata per arrestare la riproduzione del contenuto quando il lettore passa a un elemento diverso. Deselezionarla, per esempio, per mantenere la riproduzione di una colonna sonora mentre il lettore continua a leggere la storia.<br />Se la pagina Web è un\'applicazione, deselezionare l\'opzione in modo che la storia non venga ricaricata se il lettore torna alla pagina."
 			},
 			editorActionGeocode: {
 				lblTitle: "Trova un indirizzo o un luogo",
